@@ -1,0 +1,39 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+       
+}
+
+.registro {
+    text-align: right; /* Alinear el texto a la izquierda */
+    margin-left: 300px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+.registro > div {
+    margin-bottom: 20px; /* Espacio entre cada par de elementos */
+    display: flex; /* Alinear los elementos internos horizontalmente */
+    align-items: center; /* Alinear verticalmente los elementos internos */
+}
+
+.registro > div > label {
+    width: 100px; /* Ancho fijo para los labels */
+    margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+.registro > div > input {
+
+    border-radius: 10px;
+    height: 25px;
+
+}
+
+.label2 {
+    margin-left: 70px; /* Espacio entre los elementos cuando sea necesario */
+}

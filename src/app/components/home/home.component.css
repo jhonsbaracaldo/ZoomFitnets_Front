@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: -15px;
+  
+;
+}
+
+header {
+    margin: 0;
+    background-color: yellow;
+    height: 40px; /* Cambié el 20% a 20px para que se vea mejor */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+header > nav > * {
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+header input {
+    border-radius: 15px;
+}
+
+
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(51, 48, 48);
+    height: 40px; /* Cambié el 20% a 30px */
+    margin: 0; /* Eliminé margin-top: -20px; */
+    margin-top: 0px ;
+    font-size: x-small;
+   
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 100%; /* Establece un ancho específico para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    height: 540px;
+    display: flex;
+}
+
+.imagen {
+
+
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.imagen img {
+    width: 70%; /* Hace que las imágenes ocupen todo el espacio del cuadro */
+    border-radius: 15px; /* Añadir bordes redondeados */
+    height: 540px;
+}
+
+.login {
+    width: auto; /* Establece el ancho del formulario */
+    margin-left: 20px; /* Espacio entre la imagen y el formulario */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Establece la dirección del flujo como columna */
+    margin-right: -130px;
+    margin-top: 80px;
+
+}
+.login h1{
+    color: yellow;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Font Name', cursive; 
+}
+
+.login input, label{
+    border-radius: 15px;
+    text-align: center;
+  }
+.login button{
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 50%;
+  height: 10%;
+  margin-left: 60px;
+  background-color: yellow;
+  color: rgb(16, 15, 15);
+}
+
+
+

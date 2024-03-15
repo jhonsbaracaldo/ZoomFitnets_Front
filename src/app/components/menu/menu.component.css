@@ -1,0 +1,63 @@
+
+header{
+   
+
+    background-color:yellow;
+    color: black;
+    font-size: 20px;
+    font-family: 'Font Name', cursive;
+    text-align: center; 
+
+}
+
+.Menu {
+
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-direction: column; /* Alinea los elementos en una fila */
+}
+
+button {
+    margin-right: 10px; /* Espacio entre los botones */
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: rgb(51, 48, 48);
+    bottom: 0%;
+    height: 50px;
+
+    font-size: x-small;
+
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+
+.Menu {
+    width: 20%; /* Ancho de la sección de los botones */
+    border-radius: 15px;
+    margin-top: -335px;
+    margin-right: 10px; /* Espacio entre los dos contenedores */
+    
+}
+
+.Menu button {
+    height: 40px;
+    color: black;
+    background-color: yellow;
+    border-radius: 8px;
+    margin-bottom: 2px; /* Espacio entre cada botón */
+}
+
+.Windows {
+    margin-top: -10px;
+    width: 95%; /* Ancho de la otra sección */
+    height: 550px;
+    background-color: lightgray; /* Solo para visualización */
+   
+    margin-left: 10px; /* Espacio entre las dos secciones */
+}

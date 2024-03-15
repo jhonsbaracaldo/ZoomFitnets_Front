@@ -1,0 +1,9 @@
+/* Estilo personalizado para el botón de estado */
+.estado-activo {
+    background-color: green;
+  }
+  
+  .estado-inactivo {
+    background-color: red;
+  }
+  
