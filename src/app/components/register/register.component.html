@@ -1,64 +1,159 @@
 <body>
-    <h1>Registro</h1>
-    <section class="registro">
-        <div>
-            <label for="username">Nombre</label>
-            <input type="text" id="username" name="username"> 
-     
-            <label for="lastname" class="label2">Apellido</label>
-            <input type="text" id="lastname" name="lastname"> 
+    <h2 id="font">Registro</h2>
+    <section class="Form">
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Segundo Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1"placeholder="Opcional">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Segundo Apellido</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Opcional">
+            </div>
+          </div>
         </div>
-        <div>
-            <label for="telefono">Telefono</label>
-            <input type="text" id="username" name="username"> 
-     
-            <label for="RH" class="label2">RH</label>
-            <input type="text" id="lastname" name="lastname"> 
-        </div>
-        <div>
-            <label for="username" >Eps</label>
-            <input type="text" id="username" name="username"> 
-     
-            <label for="lastname" class="label2">Plan de entreno</label>
-            <input type="text" id="lastname" name="lastname"> 
-        </div>
-        <div>
-            <label for="username">Fecha de nacimiento</label>
-            <input type="text" id="username" name="username"> 
-     
-            <label for="lastname" class="label2">Correo</label>
-            <input type="text" id="lastname" name="lastname"> 
-        </div>
-        <div>
-            <label for="username">Barrio</label>
-            <input type="text" id="username" name="username"> 
-     
-            <label for="lastname" class="label2">Clave</label>
-            <input type="text" id="lastname" name="lastname"> 
-        </div>
+
+   <!--seguda ilera del formulario -->
+        <div class="row2"> 
+        <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Cedula</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" >
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Tipo de sangre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+          </div>
   
-    </section>
+      </div>
 
-    <section>
-        <h2>Registro de Huella</h2>
-        <div>
-            <label for="username">Huella</label>
-            
-            <label for="username">Mensaje de exito</label>
-       
+
+       <!--tercera ilera del formulario -->
+       <div class="row2"> 
+        <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Peso</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" >
+            </div>
+          </div>
+        <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Tipo de plan</label>
+              <select class="form-control" id="exampleFormControlSelect1" title="Selecciona el tipo de plan">
+                <option value="plan1">Plan Mensual</option>
+                <option value="plan2">Plan Semestral</option>
+                <option value="plan3">Plan Anual</option>
+              </select>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Enfermedades</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Descripcion</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+          </div>
+        </div>
+
+
+        <!--Cuarta ilera del formulario -->
+       <div class="row2"> 
+        <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Fecha de inicio</label>
+              <input type="date" class="form-control" id="exampleFormControlInput1" >
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Fecha Final</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" >
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="identification">
+        <h4>Registro de Huella y foto</h4>
+        <div class="box">
+            <label for="foto1">Cargar foto 1:</label>
+            <input type="file" id="foto1" name="foto1" accept="image/*">
+            <button type="submit">Enviar</button>
+        </div>
+        <div class="box">
+            <label for="foto2">Cargar foto 2:</label>
+            <input type="file" id="foto2" name="foto2" accept="image/*">
+            <button type="submit">Enviar</button>
         </div>
     </section>
+    
+    
+    
 
 
     <section>
-        <h2>Contacto de emergencia</h2>
-        <div>
-            <label for="username">Nombre</label>
-            <input type="text" id="username" name="username"> 
-     
-            <label for="lastname" class="label2">Celular</label>
-            <input type="text" id="lastname" name="lastname"> 
+        <h4>Contacto de emergencia</h4>
+        <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+          </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
+            <div class="col2">
+                <div class="mb-3">
+                    <select class="form-control" id="exampleFormControlSelect1" title="Contacto de emergencia">
+                        <option value="plan1">Familiar</option>
+                        <option value="plan2">Amigo</option>
+                      </select>
+                </div>
+          <div class="col2">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+            </div>
         </div>
+    </div>
+</div>
 
     </section>
 </body>
