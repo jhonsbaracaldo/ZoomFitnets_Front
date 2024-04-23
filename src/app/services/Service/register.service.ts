@@ -18,7 +18,10 @@ export class RegisterService {
   allRegister(): Observable<Register[]> {
     return this.http.get<Register[]>(`${this.URL}/Lista`);
 }
-
+ 
+  registerAllUser(data: Register): Observable<any> {
+    return this.http.post<Register>(`${this.URL}/registrar`, data);
+  }
 }
 
 
