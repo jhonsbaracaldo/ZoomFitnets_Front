@@ -3,12 +3,16 @@ header{
    
 
     background-color:yellow;
-    color: black;
-    font-size: 20px;
-    font-family: 'Font Name', cursive;
-    text-align: center; 
+   height: 20px;
+    width: 10%;
 
 }
+
+header img{
+    width: 255px;
+    height: 70px;
+}
+
 
 .Menu {
 
@@ -34,30 +38,40 @@ footer{
     display: flex;
     justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
     align-items: center; /* Alinea los elementos verticalmente */
+    background-color: rgba(247, 220, 14, 0.959);
+
 }
 
 
 .Menu {
     width: 20%; /* Ancho de la sección de los botones */
     border-radius: 15px;
-    margin-top: -335px;
+    margin-top: -170px;
     margin-right: 10px; /* Espacio entre los dos contenedores */
-    
+    text-align: left;
 }
 
 .Menu button {
-    height: 40px;
+    height: 50px;
     color: black;
-    background-color: yellow;
-    border-radius: 8px;
-    margin-bottom: 2px; /* Espacio entre cada botón */
+    background-color: rgba(247, 220, 14, 0.959);
+    margin: 0%;
+    border-color: transparent;
+    text-align: left;
+
+
+}
+.Menu button:hover {
+    background-color: #ff8400; /* Cambiar el color a un amarillo más oscuro */
+    transform: scale(1.1); /* Aplicar un efecto de zoom al 110% del tamaño original */
+
 }
 
 .Windows {
-    margin-top: -10px;
+    margin-top: -20px;
     width: 95%; /* Ancho de la otra sección */
     height: 550px;
-    background-color: lightgray; /* Solo para visualización */
+    background-color: white;/* Solo para visualización */
    
     margin-left: 10px; /* Espacio entre las dos secciones */
 }

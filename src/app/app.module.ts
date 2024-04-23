@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { RegisterComponent } from './components/register/register.component'; 
 import { ListComponent } from './components/list/list.component'; 
 import { HttpClientModule } from '@angular/common/http'; 
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

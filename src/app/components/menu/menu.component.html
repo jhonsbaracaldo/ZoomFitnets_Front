@@ -6,16 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-       <h1>ZoomFitnes</h1> 
+    <header>    
+        <img src="../../../assets/img/img_logo.png" alt="logo tipo img">
     </header>
   <section class="contenedor">
     <section class="Menu">
-        <button (click)="mostrarVentana('registro')">Registrar Usuario</button>
-       <button (click)="mostrarVentana('lista_de_usuarios')">Lista de Usuario</button>
-        <button>Inventario de productos</button>
-        <button>Ventas</button>
-        <button>Informes</button>
+        <button (click)="mostrarVentana('registro')"><img src="../../../assets/img/icons/user.svg" alt="Ícono de usuario">
+         Registrar Usuario </button>
+         <button (click)="mostrarVentana('lista_de_usuarios')"><img src="../../../assets/img/icons/list.svg" alt="Ícono de lista">Lista de Usuario</button>
+        <button><img src="../../../assets/img/icons//inventory.svg" alt="Ícono de inventario">Inventario de productos</button>
+        <button><img src="../../../assets/img/icons/buy.svg" alt="Ícono de ventas">Ventas</button>
+        <button><img src="../../../assets/img/icons/statistics.svg" alt="Ícono de informes">Informes</button>
     </section>
     <section class="Windows">
         <app-register *ngIf="ventanaSeleccionada === 'registro'"></app-register>

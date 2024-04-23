@@ -1,11 +1,12 @@
 <body>
-    <h2 id="font">Registro</h2>
+    <h2 id="font">Registro ZoomFitnes</h2>
+    <form (ngSubmit)=" onSubmit()">
     <section class="Form">
         <div class="row">
           <div class="col">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1">
+              <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="Register.name"  >
             </div>
           </div>
           <div class="col">
@@ -17,7 +18,7 @@
           <div class="col">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1">
+              <input type="text" class="form-control" id="exampleFormControlInput1"[(ngModel)]="Register.lastname">
             </div>
           </div>
           <div class="col">
@@ -39,19 +40,19 @@
           <div class="col2">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Tipo de sangre</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+              <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="Register.blood_type" placeholder="Obligatorio">
             </div>
           </div>
           <div class="col2">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+              <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="Register.email" placeholder="Obligatorio">
             </div>
           </div>
           <div class="col2">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+              <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="Register.number" placeholder="Obligatorio">
             </div>
           </div>
   
@@ -107,53 +108,66 @@
           </div>
         </div>
       </section>
-    
+   <!--Registro de huella y foto -->  
       <section class="identification">
-        <h4>Registro de Huella y foto</h4>
-        <div class="box">
-            <label for="foto1">Cargar foto 1:</label>
-            <input type="file" id="foto1" name="foto1" accept="image/*">
-            <button type="submit">Enviar</button>
-        </div>
-        <div class="box">
-            <label for="foto2">Cargar foto 2:</label>
-            <input type="file" id="foto2" name="foto2" accept="image/*">
-            <button type="submit">Enviar</button>
+        <h5 class="subtitle" >Registro de Huella y foto</h5>
+        <div class="container">
+            <div class="columna">
+                <div class="box">
+                    <label for="foto1">Cargar foto 1:</label>
+                    <input type="file" id="foto1" name="foto1" accept="image/*">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="box">
+                    <label for="foto2">Cargar foto 2:</label>
+                    <input type="file" id="foto2" name="foto2" accept="image/*">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
         </div>
     </section>
     
     
-    
+     <!--Contacto de emergencia -->
 
 
     <section>
-        <h4>Contacto de emergencia</h4>
-        <div class="col2">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
-            </div>
-          </div>
+        <h5 class="subtitle" >Contacto de emergencia</h5>
+        <div class="row2"> 
           <div class="col2">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+            </div>
+          
+           <div class="col2">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
             </div>
             <div class="col2">
-                <div class="mb-3">
-                    <select class="form-control" id="exampleFormControlSelect1" title="Contacto de emergencia">
-                        <option value="plan1">Familiar</option>
-                        <option value="plan2">Amigo</option>
-                      </select>
-                </div>
-          <div class="col2">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Parentesco</label>
+                <select class="form-control" id="exampleFormControlSelect1" title="Selecciona el tipo de plan">
+                  <option value="plan1"></option>
+                  <option value="plan1">Familiar</option>
+                  <option value="plan2">Amigo</option>
+      
+                </select>
+              </div>
             </div>
-        </div>
-    </div>
-</div>
-
+            <div class="col2">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Obligatorio">
+              </div>
+            </div>
+          </div>
+          <button  class="b1 btn bg-success">Guardar</button>
     </section>
+    </form>
 </body>
